@@ -1,0 +1,26 @@
+@media(max-width: 800px){
+    .sec_first{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .logo__text{
+        display: none;
+    }
+
+    .how_it{
+        flex-wrap: wrap;
+    }
+}
+
+@media(max-width: 500px){
+    .footer__logo{
+        display: none;
+    }
+
+    .footer__text{
+        margin-right: auto;
+        margin-left: auto;
+    }
+}

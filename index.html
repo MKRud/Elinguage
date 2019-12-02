@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Catamaran:400,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.8.1/jquery.fullPage.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="fullpage" class="container">
+
+        <div class="section sec_first">
+            <div class="head__logo">
+                <div class="logo"></div>
+                <div class="logo__text">Talk to people artificial language</div>
+            </div>
+
+            <div class="reg">
+                <div class="reg__tabs">
+                    <label class="tab active" title="Join us">Join us</label>
+                    <label class="tab" title="Sign in">Sign in</label>
+                </div>
+                <div class="head__reg">
+                    <form id="form-1" class="tab__form active">
+                        <input type="name" placeholder="Name">
+                        <input type="email" placeholder="E-mail">
+                        <input type="passwoed" placeholder="Password">
+                        <div class="form__text">If you’re the celebrity, enter the code to create a language</div>
+                        <input type="code" placeholder="Code">
+                        <button class="button__form-1">Register now</button>
+                    </form>
+
+                    <form id="form-2" class="tab__form form_two">
+                        <input type="email" placeholder="E-mail">
+                        <input type="passwoed" placeholder="Password">
+                        <button class="button__form-1">Sign in</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div class="section fp-auto-height sec_second">
+            <div class="content__text">
+                <div class="what_is">What is Elinguage?</div>
+                <div class="what_text">Web platform for communication using different artificial languages. New idea for
+                    your and your friends fun. Enjoy yor conversation!</div>
+            </div>
+            <div class="headline">How it works?</div>
+            <div class="how_it">
+                <div class="start blocks">
+                    <div class="icon_one icons"></div>
+                    <div class="headline_one headlines">Start</div>
+                    <div class="text_one texts">Register or sign in</div>
+                </div>
+                <div class="translate blocks">
+                    <div class="icon_two icons"></div>
+                    <div class="headline_two headlines">Translate</div>
+                    <div class="text_two texts">Write word or expression, choose the language
+                        and translate</div>
+                </div>
+                <div class="share blocks">
+                    <div class="icon_three icons"></div>
+                    <div class="headline_three headlines">Share</div>
+                    <div class="text_three texts">Share the five-letter conversation code with other members, who can
+                        use it to join your group.</div>
+                </div>
+                <div class="create blocks">
+                    <div class="icon_four icons"></div>
+                    <div class="headline_four headlines">Create</div>
+                    <div class="text_four texts">Create your own language!</div>
+                </div>
+            </div>
+
+            <div class="footer">
+                <div class="footer__logo"></div>
+                <div class="footer__text">
+                    <div class="conect">
+                        <div class="line"></div>
+                        <div class="conect_with">Connect with us</div>
+                        <div class="line"></div>
+                    </div>
+                    <div class="mail">support@elinguage.com</div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>
+<script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+<script src="style/script.js"></script>
+
+<script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.8.1/jquery.fullPage.js">
+</script>
+<script>
+    $(document).ready(function () {
+        $('#fullpage').fullpage({
+
+            responsiveWidth: 800,
+            verticalCentered: false,
+            navigation: true,
+            
+
+        });
+    });
+</script>
+
+</html>

@@ -1,0 +1,381 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.sec_first {
+  background: url(../../img/1.jpg) center no-repeat;
+  background-size: cover;
+}
+
+.section {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.section .head__logo {
+  width: 331px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.section .head__logo .logo {
+  width: 276px;
+  height: 109px;
+  background: url(../../img/logo.png) center no-repeat;
+  background-size: cover;
+}
+
+.section .head__logo .logo__text {
+  margin-top: 55px;
+  text-align: center;
+  color: #333333;
+  font-family: Catamaran;
+  font-size: 36px;
+  font-weight: 400;
+  letter-spacing: 3.6px;
+}
+
+.section .reg {
+  background: #c0c7c7;
+}
+
+.section .reg .reg__tabs {
+  height: 58px;
+  display: -ms-grid;
+  display: grid;
+  grid-auto-flow: column;
+}
+
+.section .reg .reg__tabs .tab {
+  text-align: center;
+  line-height: 60px;
+}
+
+.section .reg .reg__tabs .active {
+  background: #2e3e40;
+  color: #e6e8e8;
+}
+
+.section .head__reg {
+  width: 387px;
+  max-height: 365px;
+  background: #2e3e40;
+  padding: 23px 13px 34px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.section .head__reg .tab {
+  color: #ffffff;
+  font-family: Catamaran;
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: 1.8px;
+}
+
+.section .head__reg .tab__form {
+  max-height: 365px;
+  height: 100%;
+  width: 100%;
+  background: #2e3e40;
+  display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.section .head__reg .tab__form .form__text {
+  color: #ffffff;
+  font-family: Catamaran;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 1.6px;
+  margin: 14px 0 8px;
+}
+
+.section .head__reg .tab__form input {
+  margin-bottom: 15px;
+  min-height: 40px;
+  color: #333333;
+  font-family: Catamaran;
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: 1.8px;
+}
+
+.section .head__reg .tab__form .button__form-1 {
+  min-height: 40px;
+  background: #ff6600;
+  color: #333333;
+  font-family: "Catamaran - black";
+  font-size: 30px;
+  font-weight: 900;
+  letter-spacing: 3px;
+  border: none;
+  outline: none;
+}
+
+.section .head__reg .form_two {
+  display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-top: 23px;
+}
+
+.section .head__reg .active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.sec_second {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  height: auto;
+  min-height: 708px;
+  height: 100%;
+}
+
+.sec_second .content__text {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: auto;
+  margin-top: 50px;
+}
+
+.sec_second .content__text .what_is {
+  color: #00a8b2;
+  font-family: "Catamaran - Black";
+  font-size: 30px;
+  font-weight: 900;
+  letter-spacing: 3px;
+}
+
+.sec_second .content__text .what_text {
+  max-width: 764px;
+  color: #333333;
+  font-family: Catamaran;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 1.6px;
+  margin-top: 20px;
+}
+
+.sec_second .headline {
+  color: #00a8b2;
+  font-family: "Catamaran - Black";
+  font-size: 30px;
+  font-weight: 900;
+  letter-spacing: 3px;
+  margin-bottom: 50px;
+}
+
+.sec_second .how_it {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-bottom: 50px;
+}
+
+.sec_second .how_it .icon_one {
+  background: url(../../img/plus.png) center no-repeat;
+}
+
+.sec_second .how_it .icon_two {
+  background: url(../../img/translation.png) center no-repeat;
+}
+
+.sec_second .how_it .icon_three {
+  background: url(../../img/group2.png) center no-repeat;
+}
+
+.sec_second .how_it .icon_four {
+  background: url(../../img/idea.png) center no-repeat;
+}
+
+.sec_second .how_it .icons {
+  width: 77px;
+  height: 77px;
+}
+
+.sec_second .how_it .headlines {
+  margin-top: 5px;
+  color: #00a8b2;
+  font-family: Catamaran;
+  font-size: 18px;
+  font-weight: 900;
+  letter-spacing: 1.8px;
+}
+
+.sec_second .how_it .texts {
+  color: #333333;
+  font-family: Catamaran;
+  font-size: 16px;
+  font-weight: 300;
+  letter-spacing: 0;
+}
+
+.sec_second .how_it .blocks {
+  width: 200px;
+  margin: 20px 5% 0;
+  min-height: 210px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+.sec_second .footer {
+  width: 100%;
+  max-height: 120px;
+  height: 100%;
+  background: #333333;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.sec_second .footer .footer__logo {
+  width: 160px;
+  height: 64px;
+  background: url(../../img/logo_white.png);
+  margin-left: 50px;
+}
+
+.sec_second .footer .footer__text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 50px;
+  color: #ffffff;
+  font-family: Catamaran;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 1.6px;
+}
+
+.sec_second .footer .footer__text .conect {
+  width: 240px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.sec_second .footer .footer__text .line {
+  width: 45px;
+  height: 5px;
+  background: #ffffff;
+}
+
+.sec_second .footer .footer__text .mail {
+  margin-top: 20px;
+}
+
+@media (max-width: 800px) {
+  .sec_first {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .logo__text {
+    display: none;
+  }
+  .how_it {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 500px) {
+  .footer__logo {
+    display: none;
+  }
+  .footer__text {
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+/*# sourceMappingURL=style.css.map */

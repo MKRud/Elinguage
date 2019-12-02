@@ -1,0 +1,125 @@
+@import "mixins";
+
+.sec_second {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: auto;
+    min-height: 708px;
+    height: 100%;
+
+    .content__text {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: auto;
+        margin-top: 50px;
+
+        .what_is{
+            @include text(#00a8b2, "Catamaran - Black", 30px, 900, 3px);
+        }
+
+        .what_text{
+            max-width: 764px;
+            @include text(#333333, Catamaran, 16px, 400, 1.6px);
+            margin-top: 20px;
+        }
+    }
+
+    .headline {
+        @include text(#00a8b2, "Catamaran - Black", 30px, 900, 3px);
+        margin-bottom: 50px;
+    }
+
+    .how_it {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        margin-bottom: 50px;
+
+
+
+        .icon_one {
+            background: url(../../img/plus.png) center no-repeat;
+        }
+
+        .icon_two {
+            background: url(../../img/translation.png) center no-repeat;
+        }
+
+        .icon_three {
+            background: url(../../img/group2.png) center no-repeat;
+        }
+
+        .icon_four {
+            background: url(../../img/idea.png) center no-repeat;
+        }
+
+
+        .icons {
+            width: 77px;
+            height: 77px;
+        }
+
+        .headlines{
+            margin-top: 5px;
+            @include text(#00a8b2, Catamaran, 18px, 900, 1.8px);
+        }
+
+        .texts{
+            @include text(#333333, Catamaran, 16px, 300, 0)
+        }
+
+        .blocks {
+            width: 200px;
+            margin: 20px 5% 0;
+            min-height: 210px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+    }
+
+    .footer{
+        width: 100%;
+        max-height: 120px;
+        height: 100%;
+        background: #333333;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .footer__logo{
+            width: 160px;
+            height: 64px;
+            background: url(../../img/logo_white.png);
+            margin-left: 50px;
+        }
+
+        .footer__text{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-right: 50px;
+            @include text(#ffffff, Catamaran, 16px, 400, 1.6px);
+
+            .conect{
+                width: 240px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+            }
+            .line{
+                width: 45px;
+                height: 5px;
+                background: #ffffff;
+            }
+
+            .mail{
+                margin-top: 20px;
+            }
+        }
+    }
+}
