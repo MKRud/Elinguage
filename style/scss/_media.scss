@@ -20,7 +20,13 @@
     }
 
     .footer__text{
-        margin-right: auto;
-        margin-left: auto;
+        margin-right: auto !important;
+        margin-left: auto !important;
+    }
+}
+
+@media(max-width: 420px){
+    .input__form_2{
+        width: 100% !important;
     }
 }

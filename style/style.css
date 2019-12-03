@@ -60,6 +60,8 @@
   display: -ms-grid;
   display: grid;
   grid-auto-flow: column;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
 }
 
 .section .reg .reg__tabs .tab {
@@ -73,7 +75,7 @@
 }
 
 .section .head__reg {
-  width: 387px;
+  max-width: 387px;
   max-height: 365px;
   background: #2e3e40;
   padding: 23px 13px 34px;
@@ -116,10 +118,10 @@
   font-size: 16px;
   font-weight: 400;
   letter-spacing: 1.6px;
-  margin: 14px 0 8px;
+  margin: 5px 0 5px;
 }
 
-.section .head__reg .tab__form input {
+.section .head__reg .tab__form .input {
   margin-bottom: 15px;
   min-height: 40px;
   color: #333333;
@@ -129,7 +131,15 @@
   letter-spacing: 1.8px;
 }
 
-.section .head__reg .tab__form .button__form-1 {
+.section .head__reg .tab__form .input_code {
+  display: none;
+}
+
+.section .head__reg .tab__form .input__form_2 {
+  width: 387px;
+}
+
+.section .head__reg .tab__form .button__form {
   min-height: 40px;
   background: #ff6600;
   color: #333333;
@@ -156,6 +166,54 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.section .head__reg .switch[type=checkbox] {
+  height: 0;
+  width: 0;
+  visibility: hidden;
+}
+
+.section .head__reg label {
+  cursor: pointer;
+  text-indent: -9999px;
+  width: 40px;
+  height: 19px;
+  background: grey;
+  border-radius: 100px;
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.section .head__reg label:after {
+  content: '';
+  position: absolute;
+  top: 2px;
+  left: 5px;
+  width: 15px;
+  height: 14px;
+  background: #fff;
+  border-radius: 90px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.section .head__reg .switch:checked + label {
+  background: #a6ca39;
+}
+
+.section .head__reg .switch:checked + label:after {
+  left: calc(100% - 5px);
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+}
+
+.section .head__reg .switch:checked ~ .input {
+  display: block;
+}
+
+.section .head__reg label:active:after {
+  width: 30px;
 }
 
 .sec_second {
@@ -284,7 +342,7 @@
 
 .sec_second .footer {
   width: 100%;
-  max-height: 120px;
+  min-height: 120px;
   height: 100%;
   background: #333333;
   display: -webkit-box;
@@ -374,8 +432,14 @@
     display: none;
   }
   .footer__text {
-    margin-right: auto;
-    margin-left: auto;
+    margin-right: auto !important;
+    margin-left: auto !important;
+  }
+}
+
+@media (max-width: 420px) {
+  .input__form_2 {
+    width: 100% !important;
   }
 }
 /*# sourceMappingURL=style.css.map */
