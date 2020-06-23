@@ -1,7 +1,7 @@
 @import "mixins";
 
 .sec_first{
-    background: url(../../img/1.jpg) center no-repeat;
+    background: url(../img/1.jpg) center no-repeat;
     background-size: cover;
 }
 
@@ -20,7 +20,7 @@
         .logo{
             width: 276px;
             height: 109px;
-            background: url(../../img/logo.png) center no-repeat;
+            background: url(../img/logo.png) center no-repeat;
             background-size: cover;
         }
 
@@ -162,13 +162,5 @@
         label:active:after {
             width: 30px;
         }
-        
-        // centering
-        // body {
-        //     display: flex;
-        //     justify-content: center;
-        //     align-items: center;
-        //     height: 100vh;
-        // }
     }
 }
